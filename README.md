@@ -6,7 +6,8 @@
 
 ## Pre-Retrieval Methods
 
-   - Available in the [PreRetQPP](PreRetQPP/) directory.
+
+   - As the original pre-retrieval QPP methods were not provided by their authors, we have implemented them here, specifically `AvgIDF`, `MaxIDF`, `SumSCQ`, `AvgSCQ`, `MaxSCQ`, `SumVAR`, `AvgVAR`, `MaxVAR`, `AvP`, `AvNP`. The implementations are avaialble  in the [PreRetQPP](PreRetQPP/) directory.
 
 1. **MaxIDF / AvgIDF**  
    - [Pre-retrieval IDF-based predictors]()
@@ -21,29 +22,33 @@
    - [Ranking Sensitivity-based Predictors](https://)
 
 ## Post-Retrieval Methods
-1. **WIG (Weighted Information Gain)**  
+
+   - For the post-retrieval QPP methods, we utilized code provided by the original authors when available. For methods lacking a readily available codebase, we implemented them independently. Below are the links to all 10 methods used in this project:
+
+1. **WIG (Weighted Information Gain)**  (unofficial implementation)
    - [Link](https://github.com/suchanadatta/qpp-eval)
 
-2. **NQC (Normalized Query Commitment)**  
+2. **NQC (Normalized Query Commitment)**  (unofficial implementation)
    - [Link](https://github.com/suchanadatta/qpp-eval)
 
-3. **Clarity**  
-   - [Clarity Implementation]()
+3. **Clarity**  (unofficial implementation)
+   - [Link](https://github.com/suchanadatta/qpp-eval)
 
-4. **UEF (Uncertain Estimation Fusion)**  
+4. **UEF (Uncertain Estimation Fusion)**  (unofficial implementation)
 
-   - [UEF Framework]()
+   - [Link](https://github.com/suchanadatta/qpp-eval)
 
 5. **NeuralQPP**
     - available in the [NeuralQPP](NeuralQPP/) directory
-6. **Deep-QPP**  
+
+6. **Deep-QPP**  (from the author's repository)
    - [Link](https://github.com/suchanadatta/DeepQPP)
 
-6. **qppBERT-PL** 
-   - [Link](https://github.com/Narabzad/BERTQPP)
+6. **qppBERT-PL** (from the author's repository)
+   - [Link](https://github.com/suchanadatta/qppBERT-PL)
 
-7. **BERT-QPP**  
-    - [Link](https://github.com/suchanadatta/qppBERT-PL)
+7. **BERT-QPP**  (from the author's repository)
+    - [Link](https://github.com/Narabzad/BERTQPP)
 
 These repositories serve as resources for implementations of various QPP methods, some of which may require adaptation to integrate into the project’s specific framework.
 
