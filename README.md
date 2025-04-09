@@ -1,8 +1,4 @@
-# Combining Query Performance Predictors: A Reproducibility Study - under review at ECIR 2025.
-
-**Note**: This paper is currently under review at ECIR 2025. This repository is shared to provide access to the source code and data solely for review purposes. We kindly request that the repository not be shared externally until the review process is complete.
-
-
+# Combining Query Performance Predictors: A Reproducibility Study. (ECIR 2025)
 
 ## Pre-Retrieval Methods
 
