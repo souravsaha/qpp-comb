@@ -1,9 +1,11 @@
-# Combining Query Performance Predictors: A Reproducibility Study. (ECIR 2025)
+# Combining Query Performance Predictors: A Reproducibility Study. 
+
+This repository contains the codebase of [Combining Query Performance Predictors: A Reproducibility Study](https://link.springer.com/chapter/10.1007/978-3-031-88717-8_9) (published in ECIR 2025)
 
 ## Pre-Retrieval Methods
 
 
-   - As the original pre-retrieval QPP methods were not provided by their authors, we have implemented them here, specifically `AvgIDF`, `MaxIDF`, `SumSCQ`, `AvgSCQ`, `MaxSCQ`, `SumVAR`, `AvgVAR`, `MaxVAR`, `AvP`, `AvNP`. The implementations are avaialble  in the [PreRetQPP](PreRetQPP/) directory.
+   - As the original pre-retrieval QPP methods were not provided by Hauff et al. (ECIR 2009), we have implemented them here, specifically `AvgIDF`, `MaxIDF`, `SumSCQ`, `AvgSCQ`, `MaxSCQ`, `SumVAR`, `AvgVAR`, `MaxVAR`, `AvP`, `AvNP`. The implementations are avaialble  in the [PreRetQPP](PreRetQPP/) directory.
 
 1. **MaxIDF / AvgIDF**  
    - [Pre-retrieval IDF-based predictors]()
@@ -51,6 +53,9 @@ These repositories serve as resources for implementations of various QPP methods
 ## QPP Scores
 Pre-computed QPP, AP measures can be found in [data](data/) folder.
 
+## Combining different QPP methods
+To run different (penalized) regression methods and sampling strategies on three collections — TREC Robust, TREC DL 2019 & 2020, and ClueWeb09B — use the following instructions. 
+
 ### Example command
 To run the leave one out based approaches used by Hauff et al. : 
 ```bash
@@ -95,4 +100,19 @@ To run multiple regression with half-split:
 python3 multiple-regression-half-split.py --k 1000 --input data --qpp_type pre --dataset trec678rb --ols_type ols
 ```
 
-
+## Citation
+```bibtex
+@InProceedings{10.1007/978-3-031-88717-8_9,
+   author="Saha, Sourav
+   and Datta, Suchana
+   and Roy, Dwaipayan
+   and Mitra, Mandar
+   and Greene, Derek",
+   title="Combining Query Performance Predictors: A Reproducibility Study",
+   booktitle="Advances in Information Retrieval",
+   year="2025",
+   publisher="Springer Nature Switzerland",
+   address="Cham",
+   pages="112--129",
+   isbn="978-3-031-88717-8"
+}
